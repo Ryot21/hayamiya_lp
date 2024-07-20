@@ -45,20 +45,38 @@
     /* ---------------------------------------
         fadeDownアニメーション
     --------------------------------------- */
-    &-fadeDown{
+    &-fadeDown{//表示するタイミングで使用
         opacity: 0;
         animation-name:fadeDownAnime;
         perspective-origin: left center;
         animation-fill-mode: forwards;
     }
     @keyframes fadeDownAnime{
-        from {
+        0% {
             opacity: 0;
             transform: translateY(-100px);
         }
-        to {
+        50% {
+            opacity: 0;
+        }
+        100% {
             opacity: 1;
             transform: translateY(0);
+        }
+    }
+    &-fadeDown_R{//非表示のタイミングで使用
+        animation-name:fadeDown_RAnime;
+        perspective-origin: left center;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeDown_RAnime{
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-20px);
         }
     }
     /* ---------------------------------------
