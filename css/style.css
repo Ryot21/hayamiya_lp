@@ -7414,13 +7414,11 @@ label.contact__label:hover {
     opacity: 1;
   }
 }
-@media (width >= 768px) {
-  .a-scroll-on {
-    opacity: 0;
-    animation: scroll-onNav;
-    animation-timeline: scroll();
-    animation-range: cover 0% cover 100%;
-  }
+.a-scroll-on {
+  opacity: 0;
+  animation: scroll-onNav;
+  animation-timeline: scroll();
+  animation-range: cover 0% cover 100%;
 }
 
 /* ---------------------------------
@@ -7558,7 +7556,7 @@ label.contact__label:hover {
 @keyframes fadeUpAnime {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;

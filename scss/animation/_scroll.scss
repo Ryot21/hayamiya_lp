@@ -50,12 +50,12 @@
 }
 
 .a-scroll-on{
-    @include min(768){
+    // @include min(768){
         opacity: 0;
         animation: scroll-onNav;
         animation-timeline: scroll();
         animation-range: cover 0% cover 100%;
-    }
+    // }
       // &_btn{
       // 	  position: sticky;
       // 	  width: 10%;
