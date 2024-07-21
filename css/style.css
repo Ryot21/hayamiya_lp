@@ -1315,6 +1315,18 @@ span.-block {
   }
 }
 
+@media (768px >= width) {
+  .pdt15s {
+    padding-top: 15% !important;
+  }
+}
+
+@media (768px >= width) {
+  .pdt20s {
+    padding-top: 20% !important;
+  }
+}
+
 @media (width >= 768px) {
   .pdt0 {
     padding-top: 0 !important;
@@ -3760,7 +3772,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-footer__shopArea {
-    width: 40%;
+    width: 60%;
     max-width: 1000px;
   }
 }
@@ -3797,7 +3809,7 @@ button.swiper-pagination-bullet {
 
 .c-hnav {
   position: sticky;
-  top: 3%;
+  top: 1.8%;
   left: 86%;
   width: 33px;
   height: 0;
@@ -4492,11 +4504,11 @@ button.swiper-pagination-bullet {
 .c-contents.-imgBg .c-contentsBox.-en {
   left: 50%;
   transform: translateX(-50%);
-  width: 30%;
+  width: 33.333%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-en {
-    width: 12.5%;
+    width: 14.5%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-en_row01 {
@@ -4504,11 +4516,11 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-en_row01 {
-    top: 10%;
+    top: 9%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-en_row02 {
-  top: 20%;
+  top: 19.5%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-en_row02 {
@@ -4516,47 +4528,48 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-imgBg .c-contentsBox.-en_row03 {
-  top: 30%;
+  top: 29%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-en_row03 {
-    top: 32%;
+    top: 33%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-en_row04 {
-  top: 41%;
+  top: 38.5%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-en_row04 {
-    top: 43%;
+    top: 45%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-en_row05 {
-  top: 52%;
+  top: 48.5%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-en_row05 {
-    top: 54%;
+    top: 57%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-en_row06 {
-  top: 63%;
+  top: 58%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-en_row06 {
-    top: 65%;
+    top: 69%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-ja {
   top: 77%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-33%);
   width: 50%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-ja {
-    top: 80%;
-    width: 12.5%;
+    top: 83%;
+    transform: translateX(-40%);
+    width: 18.1%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-here {
@@ -5722,6 +5735,9 @@ input#contact__checkbox01:checked ~ .bk__lists li:nth-child(3), input#contact__c
 input#contact__checkbox01:checked ~ .bk__lists li a, input#contact__checkbox02:checked ~ .bk__lists li a, input#contact__checkbox03:checked ~ .bk__lists li a {
   pointer-events: all;
 }
+input#contact__checkbox01:checked ~ .bk__lists.-pageBtm, input#contact__checkbox02:checked ~ .bk__lists.-pageBtm, input#contact__checkbox03:checked ~ .bk__lists.-pageBtm {
+  margin-bottom: 10%;
+}
 
 .bk__lists {
   transition: 1s;
@@ -6373,6 +6389,7 @@ label.contact__label:hover {
 #popup,
 #popup01,
 #popup02,
+#popup03,
 #popup-imgBox,
 #popup-madori01 {
   display: none;
@@ -6380,6 +6397,7 @@ label.contact__label:hover {
 #popup:checked ~ .popup-overlay,
 #popup01:checked ~ .popup-overlay,
 #popup02:checked ~ .popup-overlay,
+#popup03:checked ~ .popup-overlay,
 #popup-imgBox:checked ~ .popup-overlay,
 #popup-madori01:checked ~ .popup-overlay {
   display: block;
@@ -6390,6 +6408,7 @@ label.contact__label:hover {
 #popup:checked ~ .popup-window,
 #popup01:checked ~ .popup-window,
 #popup02:checked ~ .popup-window,
+#popup03:checked ~ .popup-window,
 #popup-imgBox:checked ~ .popup-window,
 #popup-madori01:checked ~ .popup-window {
   display: block;
@@ -6438,7 +6457,8 @@ label.contact__label:hover {
 }
 .popup-window #inlineFrame,
 .popup-window #inlineFrame01,
-.popup-window #inlineFrame02 {
+.popup-window #inlineFrame02,
+.popup-window #inlineFrame03 {
   width: 100%;
   height: 100%;
 }
@@ -7398,9 +7418,9 @@ label.contact__label:hover {
     pointer-events: none;
     opacity: 0;
   }
-  29% {
+  5% {
     pointer-events: all;
-    opacity: 0.9;
+    opacity: 1;
   }
   30% {
     opacity: 1;

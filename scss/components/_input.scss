@@ -23,6 +23,9 @@ input{
                 &:nth-child(3){animation-delay:.5s;}
                 a{pointer-events: all;}
             }
+            &.-pageBtm{
+                margin-bottom: 10%;
+            }
         }
     }
 }

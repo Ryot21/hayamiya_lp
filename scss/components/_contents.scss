@@ -274,42 +274,42 @@
 			&.-en{
 				left: 50%;
 				transform: translateX(-50%);
-				width: 30%;
-				@include min(768){width: 12.5%;}
+				width: 33.333%;
+				@include min(768){width: 14.5%;}
 				&_row01{
 					top: 10%;
 					@include min(768){
-						top: 10%;
+						top: 9%;
 					}
 				}
 				&_row02{
-					top: 20%;
+					top: 19.5%;
 					@include min(768){
 						top: 21%;
 					}
 				}
 				&_row03{
-					top: 30%;
+					top: 29%;
 					@include min(768){
-						top: 32%;
+						top: 33%;
 					}
 				}
 				&_row04{
-					top: 41%;
+					top: 38.5%;
 					@include min(768){
-						top: 43%;
+						top: 45%;
 					}
 				}
 				&_row05{
-					top: 52%;
+					top: 48.5%;
 					@include min(768){
-						top: 54%;
+						top: 57%;
 					}
 				}
 				&_row06{
-					top: 63%;
+					top: 58%;
 					@include min(768){
-						top: 65%;
+						top: 69%;
 					}
 				}
 			}
@@ -317,11 +317,12 @@
 			&.-ja{
 				top: 77%;
 				left: 50%;
-				transform: translateX(-50%);
+				transform: translateX(-33%);
 				width: 50%;
 				@include min(768){
-					top: 80%;
-					width: 12.5%;
+					top: 83%;
+					transform: translateX(-40%);
+					width: 18.1%;
 				}
 			}
 			// HERE
